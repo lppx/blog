@@ -1,4 +1,0 @@
-# About
-
-lppx很闲
-
