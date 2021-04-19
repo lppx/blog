@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>web - 分类 - lppx</title>
+        <link>https://example.com/categories/web/</link>
+        <description>web - 分类 - lppx</description>
+        <generator>Hugo -- gohugo.io</generator><lastBuildDate>Mon, 26 Oct 2020 14:34:18 &#43;0800</lastBuildDate><atom:link href="https://example.com/categories/web/" rel="self" type="application/rss+xml" /><item>
+    <title>Vue3学习</title>
+    <link>https://example.com/20201026-vue3-learn/</link>
+    <pubDate>Mon, 26 Oct 2020 14:34:18 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://example.com/20201026-vue3-learn/</guid>
+    <description><![CDATA[生命周期函数 只能在setup里面使用
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  setup() { onBeforeMount(() =&gt; { console.log(&#39;onBeforeMount!&#39;); }); onMounted(() =&gt; { console.log(&#39;mounted!&#39;); }); onUpdated(() =&gt; { console.log(&#39;updated!&#39;); }); onUnmounted(() =&gt; { console.log(&#39;unmounted!&#39;); }); return {}; }   ref,reactive,isRef,isReactive ref()是用来根据给定的值（number、string、bool等）创建一个响应式的数据对象，ref()函数调用的返回值是个对象，这对象只包含一个value属性，只在setup函数内容访问ref函数需要添加.value
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51  &lt;template&gt; &lt;p&gt;{{ name }}&lt;/p&gt; &lt;p&gt;{{ refName }}&lt;/p&gt; &lt;van-button @click=&#34;changeValue&#34; type=&#34;primary&#34;&gt;click&lt;/van-button&gt; &lt;p&gt;用户信息：{{ user.]]></description>
+</item></channel>
+</rss>
