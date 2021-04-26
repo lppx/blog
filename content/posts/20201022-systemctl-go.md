@@ -99,3 +99,17 @@ systemctl rescue    # 进入rescue模式
 
 [systemctl部署go](https://learnku.com/articles/34025)
 
+####  config
+```
+# frp
+[Unit]
+Description=PXApi
+
+[Service]
+Type=simple
+ExecStart=/home/lib/frp/frps -c /home/lib/frp/frps.ini
+
+[Install]
+WantedBy=multi-user.target
+
+```
