@@ -5,9 +5,9 @@
             <loc>https://example.com/categories/</loc><lastmod>2021-06-09T10:22:11&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://example.com/tags/linux/</loc><lastmod>2021-06-09T10:22:11&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://example.com/</loc><lastmod>2021-06-09T10:22:11&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://example.com/20210609-mysql8/</loc><lastmod>2021-06-09T10:22:11&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://example.com/posts/</loc><lastmod>2021-06-09T10:22:11&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://example.com/tags/</loc><lastmod>2021-06-09T10:22:11&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://example.com/20210609-unraid/</loc><lastmod>2021-06-09T10:22:11&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://example.com/categories/%E6%96%87%E6%A1%A3/</loc><lastmod>2021-06-09T10:22:11&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://example.com/tags/hackintosh/</loc><lastmod>2021-04-19T13:29:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://example.com/20210419-hackintosh/</loc><lastmod>2021-04-19T13:29:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>

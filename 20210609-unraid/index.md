@@ -1,6 +1,7 @@
-# Mysql8设置远程访问
+# unraid使用手册
 
 
+#### mysql8设置远程访问
 ```
 # 登录
 mysql -u root -p
@@ -22,4 +23,20 @@ ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY '123456';  ### 12
 flush privileges;
 # 重新查看 plugin 已修改为 mysql_native_password
 select host,user,plugin,authentication_string from mysql.user;
+```
+
+#### centOS7 获取ip地址
+```
+dhclient eth0
+ip addr
+```
+
+#### centOS7开启ssh
+先检查有没有安装ssh服务：rpm -qa | grep ssh
+如果没有安装ssh服务就安装 ： yum install openssh-server
+```
+vi /etc/ssh/sshd_config
+# 开启Port 22、PermitRootLogin YES
+systemctl start sshd.service
+systemctl enable sshd.service
 ```
