@@ -17,6 +17,6 @@
     <author>作者</author>
     <guid>https://example.com/20201022-systemctl-go/</guid>
     <description><![CDATA[编写配置文件 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  cd /etc/systemd/system vi pxtool.service # pxtool.service [Unit] Description=PXApi [Service] Type=simple Restart=always RestartSec=5s ExecStart=/root/go/src/gin-target/main WorkingDirectory=/root/go/src/gin-target [Install] WantedBy=multi-user.target   每次修改 ExecStart 需要执行systemctl daemon-reload
-1 2 3 4 5 6  # 启动 systemctl start pxtool.service # 查看状态 systemctl status pxtool.service # 自启动 systemctl enable pxtool.service   常用 service 操作 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50  # 自启动 systemctl enable nginx.]]></description>
+1 2 3 4 5 6  # 启动 systemctl start pxtool.service # 查看状态 systemctl status pxtool.service # 自启动 systemctl enable pxtool.service   常用 service 操作 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50  # 自启动 systemctlenablenginx.]]></description>
 </item></channel>
 </rss>

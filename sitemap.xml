@@ -2,13 +2,17 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://example.com/categories/</loc><lastmod>2021-06-09T10:22:11&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://example.com/tags/linux/</loc><lastmod>2021-06-09T10:22:11&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://example.com/</loc><lastmod>2021-06-09T10:22:11&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://example.com/posts/</loc><lastmod>2021-06-09T10:22:11&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://example.com/tags/</loc><lastmod>2021-06-09T10:22:11&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://example.com/20210609-unraid/</loc><lastmod>2021-06-09T10:22:11&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://example.com/categories/%E6%96%87%E6%A1%A3/</loc><lastmod>2021-06-09T10:22:11&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://example.com/categories/</loc><lastmod>2021-06-09T10:22:11&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://example.com/tags/javascript/</loc><lastmod>2021-06-09T10:22:11&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://example.com/tags/linux/</loc><lastmod>2021-06-09T10:22:11&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://example.com/</loc><lastmod>2021-06-09T10:22:11&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://example.com/posts/</loc><lastmod>2021-06-09T10:22:11&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://example.com/tags/</loc><lastmod>2021-06-09T10:22:11&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://example.com/20210609-unraid/</loc><lastmod>2021-06-09T10:22:11&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://example.com/categories/web/</loc><lastmod>2021-06-09T10:22:11&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://example.com/20210624-snippets/</loc><lastmod>2021-06-09T10:22:11&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://example.com/categories/%E6%96%87%E6%A1%A3/</loc><lastmod>2021-06-09T10:22:11&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://example.com/20210623-pi/</loc><lastmod>2021-06-09T10:22:11&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
             <loc>https://example.com/tags/hackintosh/</loc><lastmod>2021-04-19T13:29:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://example.com/20210419-hackintosh/</loc><lastmod>2021-04-19T13:29:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://example.com/20201104-linux-command/</loc><lastmod>2020-11-04T15:05:18&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
@@ -19,7 +23,6 @@
             <loc>https://example.com/20201029-smart-home/</loc><lastmod>2020-10-29T10:05:18&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://example.com/tags/vue/</loc><lastmod>2020-10-26T14:34:18&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://example.com/20201026-vue3-learn/</loc><lastmod>2020-10-26T14:34:18&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://example.com/categories/web/</loc><lastmod>2020-10-26T14:34:18&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://example.com/20201025-centos-nginx/</loc><lastmod>2020-10-25T14:34:18&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://example.com/20201022-systemctl-go/</loc><lastmod>2020-10-22T23:33:49&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://example.com/tags/hugo/</loc><lastmod>2020-10-22T23:19:18&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>

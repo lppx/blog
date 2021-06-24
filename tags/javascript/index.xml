@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>javascript - 标签 - lppx</title>
+        <link>https://example.com/tags/javascript/</link>
+        <description>javascript - 标签 - lppx</description>
+        <generator>Hugo -- gohugo.io</generator><lastBuildDate>Wed, 09 Jun 2021 10:22:11 &#43;0800</lastBuildDate><atom:link href="https://example.com/tags/javascript/" rel="self" type="application/rss+xml" /><item>
+    <title>代码片段</title>
+    <link>https://example.com/20210624-snippets/</link>
+    <pubDate>Wed, 09 Jun 2021 10:22:11 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://example.com/20210624-snippets/</guid>
+    <description><![CDATA[模拟点击 1 2 3 4 5 6 7 8 9 10  const btn = document.getElementById(&#39;demo_click&#39;) function simulateClick() { const event = new MouseEvent(&#39;click&#39;, { view: window, bubbles: true, cancelable: true }); btn.dispatchEvent(event); }   ]]></description>
+</item></channel>
+</rss>
