@@ -5,32 +5,32 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <title>unraid使用手册 - lppx</title><meta name="Description" content=""><meta property="og:title" content="unraid使用手册" />
-<meta property="og:description" content="mysql8设置远程访问 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  # 登录 mysql -u root -p # 查看用户信息 select host,user,plugin,authentication_string from mysql.user; &#43;-----------&#43;------------------&#43;-----------------------&#43;------------------------------------------------------------------------&#43; | host | user | plugin | authentication_string | &#43;-----------&#43;------------------&#43;-----------------------&#43;------------------------------------------------------------------------&#43; | % | root | caching_sha2_password | $A$005$HF7;krfwhkKHp5fPenQm4J2dm/RJtbbyjtCUVdDCcboXQw3ALxsif/sS1 | | localhost | mysql.infoschema | caching_sha2_password | $A$005$THISISACOMBINATIONOFINVALIDSALTANDPASSWORDTHATMUSTNEVERBRBEUSED | | localhost | mysql.session | caching_sha2_password | $A$005$THISISACOMBINATIONOFINVALIDSALTANDPASSWORDTHATMUSTNEVERBRBEUSED | | localhost | mysql." />
+        <title>frp设置 - lppx</title><meta name="Description" content=""><meta property="og:title" content="frp设置" />
+<meta property="og:description" content="服务器配置 1 2 3 4 5 6 7 8  [common] bind_port = 7000 dashboard_port = 7001 token=xxxxx dashboard_user = xxx dashboard_pwd = xxx vhost_http_port = 8080 subdomain_host = frp.linpx.cn   nginx 转发 1 2 3 4 5 6 7 8 9 10 11 12 13  # frp server{ listen 80; server_name *.frp.linpx.cn; location / { proxy_pass http://127.0.0.1:8080; proxy_set_header Host $host; proxy_set_header X-Real-IP $remote_addr; proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for; proxy_hide_header X-Powered-By; } access_log off; }   客户端配置 1 2 3 4 5 6 7 8 9 10 11  [common] server_addr = xxx server_port = 7000 token=xxx [unraid] type = http local_ip = 10." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://example.com/20210609-unraid/" /><meta property="og:image" content="https://example.com/logo.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-06-09T10:22:11&#43;08:00" />
-<meta property="article:modified_time" content="2021-06-09T10:22:11&#43;08:00" />
+<meta property="og:url" content="https://example.com/20210630-frp/" /><meta property="og:image" content="https://example.com/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-06-30T14:18:29&#43;00:00" />
+<meta property="article:modified_time" content="2021-06-30T14:18:29&#43;00:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://example.com/logo.png"/>
 
-<meta name="twitter:title" content="unraid使用手册"/>
-<meta name="twitter:description" content="mysql8设置远程访问 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  # 登录 mysql -u root -p # 查看用户信息 select host,user,plugin,authentication_string from mysql.user; &#43;-----------&#43;------------------&#43;-----------------------&#43;------------------------------------------------------------------------&#43; | host | user | plugin | authentication_string | &#43;-----------&#43;------------------&#43;-----------------------&#43;------------------------------------------------------------------------&#43; | % | root | caching_sha2_password | $A$005$HF7;krfwhkKHp5fPenQm4J2dm/RJtbbyjtCUVdDCcboXQw3ALxsif/sS1 | | localhost | mysql.infoschema | caching_sha2_password | $A$005$THISISACOMBINATIONOFINVALIDSALTANDPASSWORDTHATMUSTNEVERBRBEUSED | | localhost | mysql.session | caching_sha2_password | $A$005$THISISACOMBINATIONOFINVALIDSALTANDPASSWORDTHATMUSTNEVERBRBEUSED | | localhost | mysql."/>
+<meta name="twitter:title" content="frp设置"/>
+<meta name="twitter:description" content="服务器配置 1 2 3 4 5 6 7 8  [common] bind_port = 7000 dashboard_port = 7001 token=xxxxx dashboard_user = xxx dashboard_pwd = xxx vhost_http_port = 8080 subdomain_host = frp.linpx.cn   nginx 转发 1 2 3 4 5 6 7 8 9 10 11 12 13  # frp server{ listen 80; server_name *.frp.linpx.cn; location / { proxy_pass http://127.0.0.1:8080; proxy_set_header Host $host; proxy_set_header X-Real-IP $remote_addr; proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for; proxy_hide_header X-Powered-By; } access_log off; }   客户端配置 1 2 3 4 5 6 7 8 9 10 11  [common] server_addr = xxx server_port = 7000 token=xxx [unraid] type = http local_ip = 10."/>
 <meta name="application-name" content="lppx">
 <meta name="apple-mobile-web-app-title" content="lppx"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://example.com/20210609-unraid/" /><link rel="prev" href="https://example.com/20210624-snippets/" /><link rel="next" href="https://example.com/20210630-frp/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://example.com/20210630-frp/" /><link rel="prev" href="https://example.com/20210609-unraid/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "unraid使用手册",
+        "headline": "frp设置",
         "inLanguage": "",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https:\/\/example.com\/20210609-unraid\/"
-        },"image": ["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "linux","wordcount":  154 ,
-        "url": "https:\/\/example.com\/20210609-unraid\/","datePublished": "2021-06-09T10:22:11+08:00","dateModified": "2021-06-09T10:22:11+08:00","publisher": {
+            "@id": "https:\/\/example.com\/20210630-frp\/"
+        },"image": ["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "tools","wordcount":  107 ,
+        "url": "https:\/\/example.com\/20210630-frp\/","datePublished": "2021-06-30T14:18:29+00:00","dateModified": "2021-06-30T14:18:29+00:00","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/example.com\/images\/avatar.png"},"author": {
                 "@type": "Person",
@@ -104,9 +104,9 @@
                 <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">目录</h2>
             <div class="toc-content" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animated flipInX">unraid使用手册</h1><div class="post-meta">
+        </div><article class="page single"><h1 class="single-title animated flipInX">frp设置</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>lppx</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/%E6%96%87%E6%A1%A3/"><i class="far fa-folder fa-fw"></i>文档</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-06-09">2021-06-09</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 154 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-06-30">2021-06-30</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 107 字&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 1 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -119,16 +119,39 @@
       <ul>
         <li>
           <ul>
-            <li><a href="#mysql8设置远程访问">mysql8设置远程访问</a></li>
-            <li><a href="#centos7-获取ip地址">centOS7 获取ip地址</a></li>
-            <li><a href="#centos7开启ssh">centOS7开启ssh</a></li>
+            <li><a href="#服务器配置">服务器配置</a></li>
+            <li><a href="#nginx-转发">nginx 转发</a></li>
+            <li><a href="#客户端配置">客户端配置</a></li>
           </ul>
         </li>
       </ul>
     </li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><h4 id="mysql8设置远程访问">mysql8设置远程访问</h4>
+            </div><div class="content" id="content"><h4 id="服务器配置">服务器配置</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">[common]
+bind_port = 7000
+dashboard_port = 7001
+token=xxxxx
+dashboard_user = xxx
+dashboard_pwd = xxx
+vhost_http_port = 8080
+subdomain_host = frp.linpx.cn
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="nginx-转发">nginx 转发</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -144,70 +167,57 @@
 </span><span class="lnt">11
 </span><span class="lnt">12
 </span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback"># 登录
-mysql -u root -p
-# 查看用户信息
-select host,user,plugin,authentication_string from mysql.user;
-
-+-----------+------------------+-----------------------+------------------------------------------------------------------------+
-| host      | user             | plugin                | authentication_string                                                  |
-+-----------+------------------+-----------------------+------------------------------------------------------------------------+
-| %         | root             | caching_sha2_password | $A$005$HF7;krfwhkKHp5fPenQm4J2dm/RJtbbyjtCUVdDCcboXQw3ALxsif/sS1 |
-| localhost | mysql.infoschema | caching_sha2_password | $A$005$THISISACOMBINATIONOFINVALIDSALTANDPASSWORDTHATMUSTNEVERBRBEUSED |
-| localhost | mysql.session    | caching_sha2_password | $A$005$THISISACOMBINATIONOFINVALIDSALTANDPASSWORDTHATMUSTNEVERBRBEUSED |
-| localhost | mysql.sys        | caching_sha2_password | $A$005$THISISACOMBINATIONOFINVALIDSALTANDPASSWORDTHATMUSTNEVERBRBEUSED |
-| localhost | root             | mysql_native_password | *6BB4837EB74329105EE4568DDA7DC67ED2CA2AD9                              |
-+-----------+------------------+-----------------------+------------------------------------------------------------------------+
-
-# host为 % 表示不限制ip  plugin 需要修改为 mysql_native_password
-ALTER USER &#39;root&#39;@&#39;%&#39; IDENTIFIED WITH mysql_native_password BY &#39;123456&#39;;  ### 123456 mysql的登录密码
-flush privileges;
-# 重新查看 plugin 已修改为 mysql_native_password
-select host,user,plugin,authentication_string from mysql.user;
+<pre class="chroma"><code class="language-fallback" data-lang="fallback"># frp
+server{
+    listen 80;
+    server_name *.frp.linpx.cn;
+    location / {
+            proxy_pass http://127.0.0.1:8080;
+            proxy_set_header Host $host;
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+            proxy_hide_header X-Powered-By;
+    }
+    access_log off;
+}
 </code></pre></td></tr></table>
 </div>
-</div><h4 id="centos7-获取ip地址">centOS7 获取ip地址</h4>
+</div><h4 id="客户端配置">客户端配置</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">dhclient eth0
-ip addr
-</code></pre></td></tr></table>
-</div>
-</div><h4 id="centos7开启ssh">centOS7开启ssh</h4>
-<p>先检查有没有安装ssh服务：rpm -qa | grep ssh
-如果没有安装ssh服务就安装 ： yum install openssh-server</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">vi /etc/ssh/sshd_config
-# 开启Port 22、PermitRootLogin YES
-systemctl start sshd.service
-systemctl enable sshd.service
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">[common]
+server_addr = xxx
+server_port = 7000
+token=xxx
+
+[unraid]
+type = http
+local_ip = 10.10.10.254
+local_port = 80
+subdomain = unraid
+# unraid.frp.linpx.cn 访问web服务
 </code></pre></td></tr></table>
 </div>
 </div></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>更新于 2021-06-09</span>
+                <span>更新于 2021-06-30</span>
             </div>
             <div class="post-info-license"></div>
         </div>
@@ -220,14 +230,13 @@ systemctl enable sshd.service
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/linux/">linux</a></section>
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/tools/">tools</a></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
         </section>
     </div>
 
-    <div class="post-nav"><a href="/20210624-snippets/" class="prev" rel="prev" title="代码片段"><i class="fas fa-angle-left fa-fw"></i>代码片段</a>
-            <a href="/20210630-frp/" class="next" rel="next" title="frp设置">frp设置<i class="fas fa-angle-right fa-fw"></i></a></div>
+    <div class="post-nav"><a href="/20210609-unraid/" class="prev" rel="prev" title="unraid使用手册"><i class="fas fa-angle-left fa-fw"></i>unraid使用手册</a></div>
 </div>
 </article></div>
             </main><footer class="footer">

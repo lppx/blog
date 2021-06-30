@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>tools - 标签 - lppx</title>
+        <link>https://example.com/tags/tools/</link>
+        <description>tools - 标签 - lppx</description>
+        <generator>Hugo -- gohugo.io</generator><lastBuildDate>Wed, 30 Jun 2021 14:18:29 &#43;0000</lastBuildDate><atom:link href="https://example.com/tags/tools/" rel="self" type="application/rss+xml" /><item>
+    <title>frp设置</title>
+    <link>https://example.com/20210630-frp/</link>
+    <pubDate>Wed, 30 Jun 2021 14:18:29 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://example.com/20210630-frp/</guid>
+    <description><![CDATA[服务器配置 1 2 3 4 5 6 7 8  [common] bind_port = 7000 dashboard_port = 7001 token=xxxxx dashboard_user = xxx dashboard_pwd = xxx vhost_http_port = 8080 subdomain_host = frp.linpx.cn   nginx 转发 1 2 3 4 5 6 7 8 9 10 11 12 13  # frp server{ listen 80; server_name *.frp.linpx.cn; location / { proxy_pass http://127.0.0.1:8080; proxy_set_header Host $host; proxy_set_header X-Real-IP $remote_addr; proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for; proxy_hide_header X-Powered-By; } access_log off; }   客户端配置 1 2 3 4 5 6 7 8 9 10 11  [common] server_addr = xxx server_port = 7000 token=xxx [unraid] type = http local_ip = 10.]]></description>
+</item></channel>
+</rss>
