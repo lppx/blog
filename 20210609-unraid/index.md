@@ -27,8 +27,12 @@ select host,user,plugin,authentication_string from mysql.user;
 
 #### centOS7 获取ip地址
 ```
+# ip addr 获取网卡型号为eth0
 dhclient eth0
 ip addr
+vi /etc/sysconfig/network-scripts/ifcfg-eth0
+# 修改开机自动获取ip
+ONBOOT=yes
 ```
 
 #### centOS7开启ssh
