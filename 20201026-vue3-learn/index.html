@@ -137,7 +137,7 @@
 <p><em>只能在setup里面使用</em></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -155,7 +155,7 @@
 </span><span class="lnt">16
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">setup() {
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">setup() {
     onBeforeMount(() =&gt; {
       console.log(&#39;onBeforeMount!&#39;);
     });
@@ -177,7 +177,7 @@
 <p>ref()是用来根据给定的值（number、string、bool等）创建一个响应式的数据对象，ref()函数调用的返回值是个对象，这对象只包含一个value属性，只在setup函数内容访问ref函数需要添加<code>.value</code></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -230,7 +230,7 @@
 </span><span class="lnt">51
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-vue" data-lang="vue"><span class="p">&lt;</span><span class="nt">template</span><span class="p">&gt;</span>
+<pre tabindex="0" class="chroma"><code class="language-vue" data-lang="vue"><span class="p">&lt;</span><span class="nt">template</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;{{</span> <span class="nx">name</span> <span class="p">}}&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;{{</span> <span class="nx">refName</span> <span class="p">}}&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">van-button</span> <span class="nt">@click</span><span class="s">=&#34;changeValue&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;primary&#34;</span><span class="p">&gt;</span><span class="nx">click</span><span class="o">&lt;</span><span class="err">/van-button&gt;</span>
@@ -288,7 +288,7 @@
 <p>在使用不需要通过<code>user.name</code>访问</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -327,7 +327,7 @@
 </span><span class="lnt">37
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-vue" data-lang="vue"><span class="p">&lt;</span><span class="nt">template</span><span class="p">&gt;</span>
+<pre tabindex="0" class="chroma"><code class="language-vue" data-lang="vue"><span class="p">&lt;</span><span class="nt">template</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span><span class="nx">用户信息</span><span class="err">：</span><span class="p">{{</span> <span class="nx">name</span> <span class="p">}}</span><span class="o">-</span><span class="p">{{</span> <span class="nx">age</span> <span class="p">}}&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span><span class="nx">用户信息</span><span class="err">：</span><span class="p">{{</span> <span class="nx">name1</span> <span class="p">}}</span><span class="o">-</span><span class="p">{{</span> <span class="nx">age1</span> <span class="p">}}&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">template</span><span class="p">&gt;</span>
@@ -369,7 +369,7 @@
 </div><h4 id="watcheffect--watch">watchEffect  watch</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -414,7 +414,7 @@
 </span><span class="lnt">43
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-vue" data-lang="vue"><span class="p">&lt;</span><span class="nt">template</span><span class="p">&gt;</span>
+<pre tabindex="0" class="chroma"><code class="language-vue" data-lang="vue"><span class="p">&lt;</span><span class="nt">template</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span><span class="nx">home</span><span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
     <span class="p">{{</span> <span class="nx">count</span> <span class="p">}}</span>

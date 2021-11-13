@@ -131,7 +131,7 @@
             </div><div class="content" id="content"><h4 id="mysql8设置远程访问">mysql8设置远程访问</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -153,7 +153,7 @@
 </span><span class="lnt">20
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback"># 登录
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"># 登录
 mysql -u root -p
 # 查看用户信息
 select host,user,plugin,authentication_string from mysql.user;
@@ -178,7 +178,7 @@ select host,user,plugin,authentication_string from mysql.user;
 </div><h4 id="centos7-获取ip地址">centOS7 获取ip地址</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -186,7 +186,7 @@ select host,user,plugin,authentication_string from mysql.user;
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback"># ip addr 获取网卡型号为eth0
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"># ip addr 获取网卡型号为eth0
 dhclient eth0
 ip addr
 vi /etc/sysconfig/network-scripts/ifcfg-eth0
@@ -199,13 +199,13 @@ ONBOOT=yes
 如果没有安装ssh服务就安装 ： yum install openssh-server</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">vi /etc/ssh/sshd_config
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">vi /etc/ssh/sshd_config
 # 开启Port 22、PermitRootLogin YES
 systemctl start sshd.service
 systemctl enable sshd.service

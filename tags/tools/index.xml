@@ -3,7 +3,14 @@
         <title>tools - 标签 - lppx</title>
         <link>https://example.com/tags/tools/</link>
         <description>tools - 标签 - lppx</description>
-        <generator>Hugo -- gohugo.io</generator><lastBuildDate>Wed, 30 Jun 2021 14:18:29 &#43;0000</lastBuildDate><atom:link href="https://example.com/tags/tools/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><lastBuildDate>Sat, 13 Nov 2021 09:47:00 &#43;0000</lastBuildDate><atom:link href="https://example.com/tags/tools/" rel="self" type="application/rss+xml" /><item>
+    <title>获取电信宽带超级密码 兆能ZN600、ZN601</title>
+    <link>https://example.com/20211113-root-tt/</link>
+    <pubDate>Sat, 13 Nov 2021 09:47:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://example.com/20211113-root-tt/</guid>
+    <description><![CDATA[ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17  准备工具： 一台电脑 一个U盘（已提前插入天翼网关） 首先打开天翼网关后台 192.168.1.1 使用天翼网关后面的普通管理员账号进入系统 然后选择已提前插入天翼网关的U盘 登录光猫点存储然后跳到存储设置 浏览器F12然后 comsole ，二级菜单选 storage iframe （settings） 在下面打命令输入 get_path_files(&#34;/mnt/usb1_1/../..&#34;) 转到光猫系统文件夹里面 打开var文件夹，将文件romfile.cfg复制到U盘 username=&#34;telecomadmin&#34; web_passwd=&#34;telecomadminxxxx&#34;   ]]></description>
+</item><item>
     <title>frp设置</title>
     <link>https://example.com/20210630-frp/</link>
     <pubDate>Wed, 30 Jun 2021 14:18:29 &#43;0000</pubDate>

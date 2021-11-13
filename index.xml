@@ -3,9 +3,16 @@
         <title>lppx</title>
         <link>https://example.com/</link>
         <description>lppx</description>
-        <generator>Hugo -- gohugo.io</generator><lastBuildDate>Wed, 30 Jun 2021 14:18:29 &#43;0000</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><lastBuildDate>Sat, 13 Nov 2021 09:47:00 &#43;0000</lastBuildDate>
             <atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>获取电信宽带超级密码 兆能ZN600、ZN601</title>
+    <link>https://example.com/20211113-root-tt/</link>
+    <pubDate>Sat, 13 Nov 2021 09:47:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://example.com/20211113-root-tt/</guid>
+    <description><![CDATA[ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17  准备工具： 一台电脑 一个U盘（已提前插入天翼网关） 首先打开天翼网关后台 192.168.1.1 使用天翼网关后面的普通管理员账号进入系统 然后选择已提前插入天翼网关的U盘 登录光猫点存储然后跳到存储设置 浏览器F12然后 comsole ，二级菜单选 storage iframe （settings） 在下面打命令输入 get_path_files(&#34;/mnt/usb1_1/../..&#34;) 转到光猫系统文件夹里面 打开var文件夹，将文件romfile.cfg复制到U盘 username=&#34;telecomadmin&#34; web_passwd=&#34;telecomadminxxxx&#34;   ]]></description>
+</item><item>
     <title>frp设置</title>
     <link>https://example.com/20210630-frp/</link>
     <pubDate>Wed, 30 Jun 2021 14:18:29 &#43;0000</pubDate>
@@ -73,15 +80,5 @@ go Arduino 读取引脚状态 1  int value = digitalRead(pin);   web ]]></descri
     <description><![CDATA[生命周期函数 只能在setup里面使用
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  setup() { onBeforeMount(() =&gt; { console.log(&#39;onBeforeMount!&#39;); }); onMounted(() =&gt; { console.log(&#39;mounted!&#39;); }); onUpdated(() =&gt; { console.log(&#39;updated!&#39;); }); onUnmounted(() =&gt; { console.log(&#39;unmounted!&#39;); }); return {}; }   ref,reactive,isRef,isReactive ref()是用来根据给定的值（number、string、bool等）创建一个响应式的数据对象，ref()函数调用的返回值是个对象，这对象只包含一个value属性，只在setup函数内容访问ref函数需要添加.value
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51  &lt;template&gt; &lt;p&gt;{{ name }}&lt;/p&gt; &lt;p&gt;{{ refName }}&lt;/p&gt; &lt;van-button @click=&#34;changeValue&#34; type=&#34;primary&#34;&gt;click&lt;/van-button&gt; &lt;p&gt;用户信息：{{ user.]]></description>
-</item><item>
-    <title>centos7安装nginx</title>
-    <link>https://example.com/20201025-centos-nginx/</link>
-    <pubDate>Sun, 25 Oct 2020 14:34:18 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://example.com/20201025-centos-nginx/</guid>
-    <description><![CDATA[安装nginx 1 2  sudo yum -y install nginx # 安装 nginx sudo yum remove nginx # 卸载 nginx   配置nginx yum安装方式 ，配置文件目录在/etc/nginx/nginx.conf 
-也可以到conf.d文件夹下，新建web.conf写入配置
-常用配置
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27  server { listen 9001; index index.html index.htm index.php; root /var/www/lppx-on-hugo/public; #error_page 404 /404.html; #include enable-php.conf; location ~ .]]></description>
 </item></channel>
 </rss>
