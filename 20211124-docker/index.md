@@ -1,7 +1,105 @@
 # docker使用
 
 
-#### docker 安装
+#### docker 安装emqx
+创建临时的
+```
+docker run -d \
+--name emqx \
+-p 1883:1883 \
+-p 8883:8883 \
+-p 8083:8083 \
+-p 8084:8084 \
+-p 8081:8081 \
+-p 18083:18083 \
+emqx/emqx:latest
+```
+```
+# 复制信息到宿主机 
+mkdir -p /appdata/emqx/{etc,lib,data,log}
+docker cp emqx:/opt/emqx/etc /appdata/emqx
+docker cp emqx:/opt/emqx/lib /appdata/emqx
+docker cp emqx:/opt/emqx/data /appdata/emqx
+docker cp emqx:/opt/emqx/log /appdata/emqx
+# 给文件夹权限
+chown -R 1000:1000 /appdata/emqx/
+chmod -R 755 /appdata/emqx/
+# 移除临时emqx
+docker stop emqx
+docker rm emqx
+# 新建
+docker run -d \
+--name emqx \
+-p 1883:1883 \
+-p 8883:8883 \
+-p 8083:8083 \
+-p 8084:8084 \
+-p 8081:8081 \
+-p 18083:18083 \
+-v /appdata/emqx/etc:/opt/emqx/etc \
+-v /appdata/emqx/lib:/opt/emqx/lib \
+-v /appdata/emqx/data:/opt/emqx/data \
+-v /appdata/emqx/log:/opt/emqx/log \
+emqx/emqx:latest
+```
+设置授权登录
+```
+# etc/emqx.conf
 
+## Value: true | false
+allow_anonymous = false
 
+# etc/plugins/emqx_auth_mnesia.conf
+
+## clientid 认证数据
+auth.client.1.clientid = admin
+auth.client.1.password = public
+
+## username 认证数据
+auth.user.2.username = admin
+auth.user.2.password = public
+```
+启用emqx_auth_mnesia插件
+
+#### 安装vscode
+```
+docker run --name code-server -p 9000:8080 \
+  -v "/appdata/coder/.config:/home/coder/.config" \
+  -v "/appdata/coder/project:/home/coder/project" \
+  -u "$(id -u):$(id -g)" \
+  -e PASSWORD=123456 \
+  -d codercom/code-server:latest
+```
+反向代理vscode
+```
+# 反向代理    
+# vscode     
+server {
+    server_name xxx;
+    listen 80;
+    listen [::]:80;
+    location / {
+      proxy_pass http://localhost:9000/;
+      proxy_set_header Host $host;
+      proxy_set_header Upgrade $http_upgrade;
+      proxy_set_header Connection upgrade;
+      proxy_set_header Accept-Encoding gzip;
+    }
+}
+```
+
+#### 安装mysql
+```
+docker run -p 3306:3306 --name mysql \
+-e MYSQL_ROOT_PASSWORD=lppx9908 \
+-v /appdata/mysql/conf:/etc/mysql \
+-v /appdata/mysql/data:/var/lib/mysql \
+-v /appdata/mysql/logs:/var/log/mysql \
+-d mysql:5.7
+# 设置远程访问
+docker exec -it mysql bash
+mysql -u root -p
+
+grant all privileges on *.* to 'root'@'%' IDENTIFIED BY '123456';
+```
 
