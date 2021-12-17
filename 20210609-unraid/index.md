@@ -1,5 +1,13 @@
 # unraid使用手册
 
+#### 安装win10
+选文件夹【amd64】
+Balloon
+NetKVM
+vioserial
+viostor(一定要最后加载这个驱动)
+
+进系统安装网卡驱动 NetKVM
 
 #### mysql8设置远程访问
 ```

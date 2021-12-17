@@ -31,7 +31,9 @@
     <pubDate>Wed, 09 Jun 2021 10:22:11 &#43;0800</pubDate>
     <author>作者</author>
     <guid>https://example.com/20210609-unraid/</guid>
-    <description><![CDATA[mysql8设置远程访问 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  # 登录 mysql -u root -p # 查看用户信息 select host,user,plugin,authentication_string from mysql.user; +-----------+------------------+-----------------------+------------------------------------------------------------------------+ | host | user | plugin | authentication_string | +-----------+------------------+-----------------------+------------------------------------------------------------------------+ | % | root | caching_sha2_password | $A$005$HF7;krfwhkKHp5fPenQm4J2dm/RJtbbyjtCUVdDCcboXQw3ALxsif/sS1 | | localhost | mysql.infoschema | caching_sha2_password | $A$005$THISISACOMBINATIONOFINVALIDSALTANDPASSWORDTHATMUSTNEVERBRBEUSED | | localhost | mysql.session | caching_sha2_password | $A$005$THISISACOMBINATIONOFINVALIDSALTANDPASSWORDTHATMUSTNEVERBRBEUSED | | localhost | mysql.]]></description>
+    <description><![CDATA[安装win10 选文件夹【amd64】 Balloon NetKVM vioserial viostor(一定要最后加载这个驱动)
+进系统安装网卡驱动 NetKVM
+mysql8设置远程访问 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  # 登录 mysql -u root -p # 查看用户信息 select host,user,plugin,authentication_string from mysql.user; +-----------+------------------+-----------------------+------------------------------------------------------------------------+ | host | user | plugin | authentication_string | +-----------+------------------+-----------------------+------------------------------------------------------------------------+ | % | root | caching_sha2_password | $A$005$HF7;krfwhkKHp5fPenQm4J2dm/RJtbbyjtCUVdDCcboXQw3ALxsif/sS1 | | localhost | mysql.infoschema | caching_sha2_password | $A$005$THISISACOMBINATIONOFINVALIDSALTANDPASSWORDTHATMUSTNEVERBRBEUSED | | localhost | mysql.]]></description>
 </item><item>
     <title>树莓派使用手册</title>
     <link>https://example.com/20210623-pi/</link>
