@@ -60,6 +60,20 @@ server {
         proxy_pass http://127.0.0.1:7017;
     }
 }
+
+# vscode
+server {
+    server_name www.xxxx.xx;
+    listen 80;
+    listen [::]:80;
+    location / {
+      proxy_pass http://localhost:12345/;
+      proxy_set_header Host $host;
+      proxy_set_header Upgrade $http_upgrade;
+      proxy_set_header Connection upgrade;
+      proxy_set_header Accept-Encoding gzip;
+    }
+}
 ```
 
 
